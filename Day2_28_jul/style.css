@@ -1,0 +1,42 @@
+
+*{
+    margin: 0;
+}
+
+/* tag selector */
+body {
+   background-image: url('./bg.jpeg');
+    color: white;
+}
+
+
+/* class selector */
+
+.pinky{
+    color: pink;
+    font-size:20px;
+    font-style: italic;
+}
+
+.tinky{
+    color: green;
+}
+
+
+/* ID selector */
+#minky{
+    color: gold;
+}
+
+
+
+  /* 
+  
+    Inline:
+    Internal
+    External
+
+
+
+    Specifity(priority): Inline > Internal > External
+  */
