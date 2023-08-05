@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner{
+    background-image: url('./assets/bg.jpeg');
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.banner-content{
+    margin-top: 80px;
+    text-align: center;
+    color: white;
+}
+.banner-heading{
+    font-size: 70px;
+}
+.banner-msg{
+    margin: 30px auto;
+    font-size: 24px;
+    max-width: 600px;
+}
+.banner-actions{
+    text-align: center;
+    margin-top: 80px;
+}
+.banner-action{
+    background-color: white;
+    border-radius: 32px;
+    padding: 18px 20px;
+    color: black;
+    margin: 0px 14px;
+    font-size: 18px;
+    text-decoration: none ;
+    font-weight:600;
+    border: 1px solid white;
+}
+.banner-action:hover{
+    background-color: salmon;
+    border: 1px solid salmon;
+    color: white;
+}
+.outline-btn{
+    background-color: transparent;
+    color: white;
+}
+
+.cateogies-container{
+    max-width: 1100px;
+    margin: 100px auto 80px auto;
+}
+.category-card{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+.category-card-img{
+    height: 200px;
+    width: 200px;
+   
+}
+.category-card-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+.footer-msg{
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+.footer-link{
+    margin-top: 40px;
+    border-top: 1px solid gray;
+    padding-top: 40px;
+    margin-bottom: 10px;
+}
+
+.footer-link-insta{
+    color: pink;
+}
+
+.footer-note{
+    color: lightgray;
+}
+.required{
+    color: red;
+}

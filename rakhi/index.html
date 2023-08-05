@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rakhi | A Present for your loved ones</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="banner">
+      <div class="banner-content">
+        <h1 class="banner-heading">Gift a Rakhi</h1>
+        <p class="banner-msg">
+          Gift a bond of togetherness to your loved ones💓. Get customised rakhi
+          with attractive discounts🤩
+        </p>
+      </div>
+      <div class="banner-actions">
+        <a href="#" class="banner-action"> Choose Rakhi </a>
+        <a href="#" class="banner-action outline-btn"> Customise Rakhi </a>
+      </div>
+      <div class="cateogies-container">
+        <div class="category-card">
+          <img class="category-card-img" src="./assets/a.svg" />
+          <p class="category-card-title">A category</p>
+        </div>
+        <div class="category-card">
+          <img class="category-card-img" src="./assets/b.png" />
+          <p class="category-card-title">B category</p>
+        </div>
+        <div class="category-card">
+          <img
+            class="category-card-img"
+            src="./assets/c.svg"
+            alt="C category"
+          />
+          <p class="category-card-title">C category</p>
+        </div>
+        <div class="category-card">
+          <img class="category-card-img" src="./assets/d.png" />
+          <p class="category-card-title">D category</p>
+        </div>
+      </div>
+    </div>
+    <section class="container">
+      <h2>Contact Our Team</h2>
+      <div class="form-wrapper">
+        <fieldset>
+
+        <legend align="center">
+            Make Order
+        </legend>
+        <form>
+          <div class="input-item">
+            <label for="username" class="input-item-label"> Name<sup class="required">*</sup></label>
+            <input required autofocus placeholder="Enter name" id="username" name="username" />
+          </div>
+          <div class="input-item">
+            <label for="email" class="input-item-label"> Email </label>
+            <input
+              placeholder="Enter email"
+              id="email"
+              name="email"
+              type="email"
+              disabled
+            />
+          </div>
+          <div class="input-item">
+            <label for="phone" class="input-item-label"> Phone </label>
+            <input
+              placeholder="Enter phone"
+              id="phone"
+              name="phone"
+              type="tel"
+            />
+          </div>
+          <div class="input-item">
+            <label for="category" class="input-item-label"> Category </label>
+            <select id="category" name="category">
+                <option selected disabled value="">
+                    Choose category
+                </option>
+                <optgroup label="Plain">
+                <option value="simple_rakhi">
+                    Simple Rakhi
+                </option>
+                <option value="toy_rakhi">
+                    Toy Rakhi
+                </option>
+                </optgroup>
+                <optgroup label="Customised">
+                <option value="cartoon_rakhi">
+                    Cartoon Rakhi
+                </option>
+            </optgroup>
+            <optgroup label="Premium">
+                <option value="gold_rakhi">
+                    Gold Rakhi
+                </option>
+                <option value="silver_rakhi">
+                    Silver Rakhi
+                </option>
+            </optgroup>
+            <optgroup label="Exclusive">
+                <option value="bracelet">
+                    Bracelet
+                 </option>
+            </optgroup>
+            
+            </select>
+          </div>
+          <div class="input-item">
+            <span class="input-item-label">
+                Payment Method
+            </span>
+            <input name="payment_method" type="radio" id="online" />
+            <label for="online" >Online </label>
+            <input name="payment_method" type="radio" id="cod" />
+            <label for="cod" >COD </label>
+           
+          </div>
+          <div class="input-item">
+            <label for="msg" class="input-item-label"> Message </label>
+           <textarea placeholder="Enter your message.." id="msg">
+           </textarea>
+          </div>
+          <div class="input-item">
+            <input
+            id="agreement"
+            name="agreement"
+            type="checkbox"
+          />
+            <label for="agreement" class="input-item-label"> Agree with no return and refund policy. </label>
+           
+          </div>
+          <!-- <input type="submit" value="Send" /> -->
+          <button>
+            Send
+          </button>
+        </form>
+    </fieldset>
+      </div>
+    </section>
+    <footer>
+      <p class="footer-msg">
+        We create customise Rakhi for you with complete care and love. Our goal
+        is to make your special moments memorable for long time.
+      </p>
+      <div class="footer-link">
+        <span>Share your moments with us on:</span>
+        <a
+          class="footer-link-insta"
+          href="https://www.instagram.com/utkarshknight/"
+          target="_blank"
+          >Instagram</a
+        >
+      </div>
+      <code class="footer-note"
+        >Note: No Return & Refund policy, beause we are also wroking hard</code
+      >
+    </footer>
+  </body>
+</html>
