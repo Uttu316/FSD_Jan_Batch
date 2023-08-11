@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  height: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.hero-section {
+  height: 100%;
+  width: 100%;
+  background-image: url("./bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.hero-header {
+  padding: 20px;
+}
+.hero-nav {
+  margin: 20px auto;
+  max-width: 800px;
+}
+.hero-nav-item {
+  padding: 10px 24px;
+  background-color: white;
+  margin-right: 4px;
+  color: gray;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.hero-nav-item span {
+  margin-left: 8px;
+}
+
+.hero-nav-item:hover {
+  background-color: #ef1790;
+  color: white;
+}
+
+.hero-heading {
+  font-size: 50px;
+  margin-top: 200px;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 8px;
+}
+
+.container {
+  padding: 40px;
+  overflow: auto;
+}
+
+.container-heading {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 34px;
+  text-align: center;
+}
+.ribion {
+  border-bottom: 4px solid chartreuse;
+}
+
+.deatils-box {
+  margin-top: 80px;
+}
+
+.deatils-image {
+  float: left;
+  height: 400px;
+  width: 45%;
+  margin-right: 40px;
+}
+.deatils-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.deatils-content {
+  float: left;
+  width: 45%;
+  margin-left: 40px;
+}
+
+.deatils-content-heading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.deatils-content-points {
+  list-style-type: none;
+}
+
+.deatils-content-points > li {
+  margin-bottom: 20px;
+  color: gray;
+  font-size: 18px;
+}
+
+.cards {
+  margin: 0px auto;
+  margin-top: 80px;
+  max-width: 880px;
+}
+
+.card {
+  display: inline-block;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 4px #cccc, -4px -4px 4px #cccc;
+  width: 250px;
+  padding: 10px;
+}
+
+.card-img {
+  height: 120px;
+  width: 120px;
+  border: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.card-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.card-content {
+  margin-top: 20px;
+  text-align: center;
+}
+.card-heading {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.card-desc {
+  font-size: 14px;
+  color: gray;
+}
