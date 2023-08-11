@@ -108,16 +108,16 @@ body {
 .cards {
   margin: 0px auto;
   margin-top: 80px;
-  max-width: 880px;
+  max-width: 920px;
 }
 
 .card {
   display: inline-block;
   margin: 20px;
   border-radius: 8px;
-  box-shadow: 4px 4px 4px #cccc, -4px -4px 4px #cccc;
-  width: 250px;
-  padding: 10px;
+  box-shadow: 4px 4px 4px #cccc, -4px 4px 4px #cccc, -1px -4px 4px #cccc;
+  width: 260px;
+  padding: 20px;
 }
 
 .card-img {
@@ -135,6 +135,7 @@ body {
 .card-content {
   margin-top: 20px;
   text-align: center;
+  font-family: sans-serif;
 }
 .card-heading {
   font-size: 22px;
