@@ -13,7 +13,7 @@ body {
 }
 
 .hero-section {
-  height: 100%;
+  height: 75%;
   width: 100%;
   background-image: url("./bg.jpeg");
   background-repeat: no-repeat;
@@ -21,11 +21,16 @@ body {
 }
 
 .hero-header {
-  padding: 20px;
+  padding: 16px;
 }
 .hero-nav {
+  display: none;
   margin: 20px auto;
-  max-width: 800px;
+  max-width: 710px;
+}
+.hero-nav-mobile{
+  display: block;
+  font-size: 28px;
 }
 .hero-nav-item {
   padding: 10px 24px;
@@ -46,21 +51,22 @@ body {
 }
 
 .hero-heading {
-  font-size: 50px;
-  margin-top: 200px;
+  font-size: 38px;
+  margin-top: 100px;
   text-align: center;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 8px;
+  padding: 0px 16px;
 }
 
 .container {
-  padding: 40px;
+  padding: 20px;
   overflow: auto;
 }
 
 .container-heading {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 34px;
+  font-size: 28px;
   text-align: center;
 }
 .ribion {
@@ -68,14 +74,13 @@ body {
 }
 
 .deatils-box {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .deatils-image {
   float: left;
-  height: 400px;
-  width: 45%;
-  margin-right: 40px;
+  height: 250px;
+  width: 100%;
 }
 .deatils-image img {
   height: 100%;
@@ -85,39 +90,40 @@ body {
 
 .deatils-content {
   float: left;
-  width: 45%;
-  margin-left: 40px;
+  width: 100%;
 }
 
 .deatils-content-heading {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 28px;
+  font-size: 22px;
   margin-bottom: 20px;
 }
 
 .deatils-content-points {
   list-style-type: none;
+  padding-inline-start:0px
 }
 
 .deatils-content-points > li {
   margin-bottom: 20px;
   color: gray;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .cards {
   margin: 0px auto;
-  margin-top: 80px;
+  margin-top: 40px;
   max-width: 920px;
 }
 
 .card {
   display: inline-block;
-  margin: 20px;
   border-radius: 8px;
+  margin: 10px;
   box-shadow: 4px 4px 4px #cccc, -4px 4px 4px #cccc, -1px -4px 4px #cccc;
-  width: 260px;
-  padding: 20px;
+  min-width: 260px;
+  width: 100%;
+  padding: 12px;
 }
 
 .card-img {
@@ -133,12 +139,12 @@ body {
   object-fit: contain;
 }
 .card-content {
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: center;
   font-family: sans-serif;
 }
 .card-heading {
-  font-size: 22px;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 .card-desc {
@@ -252,4 +258,125 @@ background-color: #F5F5F5;
   color: gray;
   font-weight: normal;
   line-height: 10px;
+}
+
+
+
+
+/* mobile */
+@media (min-width:576px){
+  .hero-nav-mobile{
+    font-size: 32px;
+  }
+  .container-heading{
+    font-size: 30px;
+  }
+  .deatils-image{
+
+    margin-bottom: 20px;
+  }
+  .deatils-content-heading{
+    font-size: 24px;
+  }
+  .card{
+    width: 45%;
+  }
+}
+/* large mobiles */
+@media (min-width:768px){
+ 
+  .hero-nav{
+    display: block;
+  }
+  .hero-header{
+    padding: 18px;
+  }
+  .hero-nav-mobile{
+    display: none;
+  }
+  .deatils-box{
+    margin-top: 80px;
+  }
+  .deatils-image{
+    height: 400px;
+   width: 45%;
+  }
+  .deatils-content{
+    width: 45%;
+    margin-left: 40px;
+
+  }
+  .deatils-content-heading{
+    font-size: 28px;
+  }
+  .deatils-content-points{
+    padding-inline-start:40px
+  }
+  .deatils-content-points > li{
+    font-size: 18px;
+  }
+  .cards{
+    margin-top: 80px;
+  }
+  .card{
+    padding: 16px;
+  }
+  .card-content{
+    margin-top: 20px;
+  }
+  .card-heading{
+    font-size: 20px;
+  }
+
+}
+/*  tablets */
+@media (min-width:992px){
+
+  .hero-section {
+    height: 100%;
+  }
+  .hero-header{
+    padding: 20px;
+  }
+  .hero-heading{
+    font-size: 40px;
+    margin-top: 100px;
+  }
+  .container-heading{
+    font-size: 32px;
+  }
+  .deatils-image{
+    margin-right: 40px;
+
+  }
+  .card{
+    width: 30%;
+  }
+  .card{
+    padding: 20px;
+  }
+  .card-heading{
+    font-size: 22px;
+  }
+}
+/* laptops */
+@media (min-width:1200px){
+  .hero-heading{
+    font-size: 45px;
+  }
+  .container-heading{
+    font-size: 34px;
+  }
+
+}
+/* desktops */
+@media (min-width:1400px){
+  .hero-heading{
+    font-size: 50px;
+  }
+}
+@media (min-width:576px) and (max-width:603px) {
+  .card{
+    min-width: 246px;
+  }
 }
