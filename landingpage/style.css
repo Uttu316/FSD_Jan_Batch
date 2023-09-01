@@ -215,34 +215,31 @@ background-color: #F5F5F5;
 .signup-card{
   background-color: white;
   box-shadow: 4px 4px 4px #ccc,4px 4px 4px #ef1790;
-  padding: 40px;
+  padding: 20px;
   border-radius: 12px;
   overflow: auto;
 }
 .signup-card-heading{
-  font-size: 32px;
+  font-size: 26px;
   font-family:Arial, Helvetica, sans-serif;
   float: left;
-  max-width: 50%;
   font-weight: 700;
 }
-.signup-form{
-  float: right;
-}
+
 .signup-form input{
   padding: 20px;
   padding-left: 0;
-  width: 400px;
   border: none;
   border-bottom: 1px solid gray;
   color: gray;
+  width: 100%;
 }
 .signup-form input:focus{
   outline: none;
   border-bottom: 1px solid  #ef1790;
 }
 .signup-form button{
-  padding: 12px 40px;
+  padding: 12px 20px;
   background-color:#ef1790 ;
   border: none;
   color: white;
@@ -251,13 +248,15 @@ background-color: #F5F5F5;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-left: 20px;
+  margin-top: 20px;
 }
 .signup-card-heading span{
   font-size: 14px;
   color: gray;
   font-weight: normal;
-  line-height: 10px;
+  line-height: 20px;
+  margin-top: 20px;
+  display: block;
 }
 
 .pricing-cards-container{
@@ -446,12 +445,13 @@ background-color: #F5F5F5;
   padding-top: 10vh;
  }
  .sidebar-list-item{
-  padding: 14px 10px;
+  
   border-radius: 8px;
   font-size: 20px;
   color: #24244C;
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
  }
  .sidebar-list-item i{
   transition: transform .3s ;
@@ -465,6 +465,8 @@ background-color: #F5F5F5;
  .sidebar-list-item a{
   text-decoration: none;
   color: #24244C;
+  padding: 14px 10px;
+  display: block;
  }
 
  .sidebar-list-item.active{
@@ -538,6 +540,30 @@ background-color: #F5F5F5;
   .card-heading{
     font-size: 20px;
   }
+  .signup-form{
+    float: right;
+  }
+  .signup-card-heading{
+    max-width: 50%;
+    font-size: 32px;
+  }
+  .signup-card-heading span{
+    display: inline;
+    line-height: 10px;
+    margin-top: 0px;
+  }
+  .signup-form button{
+    padding: 12px 40px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+  }
+  .signup-card{
+    padding: 40px;
+  }
+  .signup-form input{
+    width: 400px;
+  }
+
 
 }
 /*  tablets */
