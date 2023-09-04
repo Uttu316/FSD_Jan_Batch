@@ -1,0 +1,15 @@
+
+.product-card{
+    background-color: lavender;
+    width: 240px;
+}
+#heroCarousel img{
+    height: 500px;
+}
+.review-card-img{
+    height: 80px;
+}
+.review-card-img img{
+    height: 100px;
+    top: -30px;
+}
