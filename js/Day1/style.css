@@ -1,0 +1,93 @@
+
+*{
+    margin: 0;
+}
+
+body,html{
+    height: 100%;
+}
+
+.layout{
+    display: flex;
+    background-color: gold;
+    height: 100%;
+}
+aside {
+    position: fixed;
+    z-index: 99999;
+    width: 250px;
+    height: 100%;
+    background-color: blueviolet;
+}
+.right-section{
+    margin-left: 250px;
+}
+
+
+.A{
+    height: 500px;
+    background-color: brown;
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+    position: relative;
+    margin: 20px 0px;
+}
+
+
+.B{
+    background-color: pink;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    z-index: 99;
+}
+.C{
+    background-color: salmon;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+}
+
+.chat-icon{
+    background-color: skyblue;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 40px;
+    transition: all 0.5s;
+    z-index: 99999;
+}
+
+.chat-icon:hover{
+    transform: scale(1.2);
+}
+header{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    top: 0;
+}
+main{
+    margin-top: 80px;
+}
+.sale-banner{
+    padding: 40px;
+    background-color: indianred;
+    font-size: 40px;
+    color: white;
+    position: sticky;
+    top: 80px;
+    z-index: 9999;
+}
