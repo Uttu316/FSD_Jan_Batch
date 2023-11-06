@@ -7,6 +7,7 @@ Function.prototype.myApply = function (context = {}, args = []) {
   }
 
   let x = this;
+
   return function () {
     x.apply(context, args);
   };
