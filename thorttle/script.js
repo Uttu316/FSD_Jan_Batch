@@ -40,3 +40,13 @@ const throttle = throttling((value) => {
 window.addEventListener("scroll", (e) => {
   throttle(e);
 });
+
+/*
+
+
+const throttle = throttling(scrollHandler);
+
+
+container.addEventListener("scroll", throttle);
+
+*/
