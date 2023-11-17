@@ -17,14 +17,14 @@
 
     <main class="main-wrapper">
         <section class="history-actions">
-            <button class="history-action-btn">
+            <button id="history-btn" class="history-action-btn">
                 Saved Solutions
             </button>
         </section>
         <section class="inputs-section">
             <form id="equation-form">
-                <textarea name="equation" placeholder="Enter equation"></textarea>
-                <select name="category" class="category-select">
+                <textarea id="equation" name="equation" placeholder="Enter equation"></textarea>
+                <select id="category" name="category" class="category-select">
                     <option value="" selected disabled>Choose Operation</option>
                     <option value="simplify" class="operation">Simplify</option>
                     
@@ -62,6 +62,12 @@
             <button disabled id="search-btn" >
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
+        </section>
+        <section id="history-list">
+
+        </section>
+        <section id="search-result">
+
         </section>
     </main>
 
