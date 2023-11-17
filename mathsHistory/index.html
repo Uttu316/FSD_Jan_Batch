@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths Builder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./styles/style.css" rel="stylesheet"/>
+</head>
+<body>
+    <header class="header">
+        <img src="./assets/logo.png" class="logo"/>
+        <h1>
+            Math Builder
+        </h1>
+    </header>
+
+    <main class="main-wrapper">
+        <section class="history-actions">
+            <button class="history-action-btn">
+                Saved Solutions
+            </button>
+        </section>
+        <section class="inputs-section">
+            <form id="equation-form">
+                <textarea name="equation" placeholder="Enter equation"></textarea>
+                <select name="category" class="category-select">
+                    <option value="" selected disabled>Choose Operation</option>
+                    <option value="simplify" class="operation">Simplify</option>
+                    
+                    <option value="factor" class="operation">Factor</option>
+                    
+                    <option value="derive" class="operation">Derive</option>
+                    
+                    <option value="integrate" class="operation">Integrate</option>
+                    
+                    <option value="zeroes" class="operation">Find 0's</option>
+                    
+                    <option value="tangent" class="operation">Find Tangent</option>
+                    
+                    <option value="area" class="operation">Area Under Curve</option>
+                    
+                    <option value="cos" class="operation">Cosine</option>
+                    
+                    <option value="sin" class="operation">Sine</option>
+                    
+                    <option value="tan" class="operation">Tangent</option>
+                    
+                    <option value="arccos" class="operation">Inverse Cosine</option>
+                    
+                    <option value="arcsin" class="operation">Inverse Sine</option>
+                    
+                    <option value="arctan" class="operation">Inverse Tangent</option>
+                    
+                    <option value="abs" class="operation">Absolute Value</option>
+                    
+                    <option value="log" class="operation">Logarithm</option>
+                    
+                </select>
+            </form>
+            
+            <button disabled id="search-btn" >
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </section>
+    </main>
+
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
