@@ -1,6 +1,25 @@
+class LS {
+  constructor() {}
+  get(key) {
+    try {
+      var val = localStorage.getItem(key);
+      return JSON.parse(val);
+    } catch (e) {
+      return val;
+    }
+  }
+  set(key, value) {
+    if (typeof value !== "string") {
+      value = JSON.stringify(value);
+    }
+    localStorage.setItem(key, value);
+  }
+}
+
 (function () {
+  const ls = new LS();
   let params = {};
-  const results = [];
+  let results = ls.get("results") || [];
 
   const form = document.getElementById("equation-form");
   const btn = document.getElementById("search-btn");
@@ -21,6 +40,7 @@
     clearHistoryList();
     const result = await getEquationResults(params);
     results.unshift(result);
+    ls.set("results", results);
     const searchResultEl = document.getElementById("search-result");
 
     const article = createResultItem(result);
@@ -50,6 +70,7 @@
 
   const getEquationResults = async (params) => {
     try {
+      loaderStart();
       const { equation, category } = params;
       if (!equation || !category) {
         return Promise.reject(new Error("Params are not correct"));
@@ -61,18 +82,20 @@
       return data;
     } catch (e) {
       console.error(e);
+    } finally {
+      loaderStop();
     }
   };
 
   const createHistoryList = () => {
     const historyListEl = document.getElementById("history-list");
-    results.forEach((item) => {
-      const article = createResultItem(item, true);
+    results.forEach((item, index) => {
+      const article = createResultItem(item, true, index);
       historyListEl.append(article);
     });
   };
 
-  const createResultItem = (result, isHistory) => {
+  const createResultItem = (result, isHistory, index) => {
     const article = document.createElement("article");
     const operationEl = document.createElement("h3");
     const expressionEl = document.createElement("p");
@@ -81,10 +104,11 @@
     if (isHistory) {
       var dltBtn = document.createElement("button");
       dltBtn.innerHTML = "Delete";
-      //   var icon = document.createElement("i");
-
-      //   icon.classList.add("fa-solid fa-trash");
-      //   dltBtn.append(icon);
+      dltBtn.addEventListener("click", function (e) {
+        results.splice(index, 1);
+        ls.set("results", results);
+        this.parentElement.remove();
+      });
     }
 
     const { expression, operation, result: answer } = result;
@@ -99,4 +123,25 @@
     }
     return article;
   };
+
+  const loaderStart = () => {
+    const loader = document.getElementById("loader");
+    loader.style.display = "block";
+  };
+  const loaderStop = () => {
+    const loader = document.getElementById("loader");
+    loader.style.display = "none";
+  };
 })();
+
+/*
+
+
+localStorage
+
+//setItem('key')
+
+
+
+
+*/
