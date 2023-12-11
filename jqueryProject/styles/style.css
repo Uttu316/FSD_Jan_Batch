@@ -96,9 +96,8 @@ body{
     padding: 10px;
 }
 
-#posts .post-item .post-content::first-letter{
+#posts .post-item .post-content-text::first-letter{
     font-size: 1.4rem;
     text-transform: uppercase;
 }
-
 
