@@ -1,0 +1,17 @@
+
+
+.common_btn{
+    border-radius: 4px;
+    color: white;
+    background-color:rgb(229, 9, 20) ;
+    transition: all 0.3s linear;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+
+}
+.common_btn:hover{
+    background-color: rgb(193, 17, 25);
+}

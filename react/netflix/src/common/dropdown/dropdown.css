@@ -1,0 +1,23 @@
+
+
+.common_dropdown_wrapper{
+    border-radius: 4px;
+    border: 1px solid white;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 5px;
+}
+.common_dropdown_select {
+    background-color: black;
+    color: white;
+    border: none;
+
+}
+.common_dropdown_select option{
+    background-color: white;
+    color: #000;
+}

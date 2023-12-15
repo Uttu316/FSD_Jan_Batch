@@ -1,11 +1,12 @@
 import React from "react";
 import Header from "../header";
+import "./heroBanner.css";
 
 const HeroBanner = () => {
   return (
-    <section>
-      <Header title={"Netflix"} />
-      <h1>HeroBanner</h1>
+    <section className="hero-banner-wrapper">
+      <Header />
+      <h1 className="text">HeroBanner</h1>
     </section>
   );
 };
