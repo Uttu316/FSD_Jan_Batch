@@ -1,0 +1,46 @@
+.subscription_form_wrapper {
+  margin-top: 20px;
+}
+
+.subscription_form_heading {
+  color: white;
+  font-size: 16px;
+}
+
+.subscription_form_input_wrapper {
+  margin: 10px;
+  display: flex;
+  gap: 10px;
+}
+.subscription_form_input_container {
+  position: relative;
+    flex-grow: 1;
+}
+.subscription_form_input {
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 12px 10px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  padding-top:16px;
+}
+
+.subscription_form_input_label{
+    position: absolute;
+    top:12px;
+    left:10px;
+    color: white;
+    transition: all 0.2s linear;
+    pointer-events: none;
+}
+.subscription_form_input:active{
+    outline: 1px solid white;
+    outline-offset: 4px;
+}
+
+
+.subscription_form_input:active+.subscription_form_input_label{
+    top: 4px;
+    font-size: 10px;
+}

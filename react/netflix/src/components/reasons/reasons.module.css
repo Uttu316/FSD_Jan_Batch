@@ -1,0 +1,58 @@
+
+.reasons_wrappers{
+    padding: 80px;
+    background-color: black;
+    position: relative;
+}
+.reasons_wrappers::before{
+    height: 70px;
+    position: absolute;
+    content: '';
+    top: -10px;
+    left: 0;
+    right: 0;
+    border: solid 0.25rem transparent;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    border-bottom: none;
+    background: radial-gradient( 50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100% ),black;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    z-index: 99;
+}
+
+.reasons_heading{
+    font-size: 24px;
+    color: white;
+}
+.reasonsList{
+    margin-top: 20px;
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    justify-content: center;
+}
+
+.reasonCard{
+    color: white;
+    flex: 1;
+    border-radius: 12px;
+    background: linear-gradient(
+        149deg,
+        #192247 0%,
+        #210e17 96.86%
+    );
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+}
+.reasonTitle{
+    font-size: 24px;
+    font-weight: bold;
+   flex-grow: 1;
+}
+.reasonIcon{
+    margin-top: 40px;
+    align-self: self-end;
+    font-size: 50px;
+}   
