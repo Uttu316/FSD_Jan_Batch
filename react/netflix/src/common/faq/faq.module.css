@@ -1,0 +1,36 @@
+
+
+
+.faqCard_wrapper{
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 800px;
+}
+.faqCardHeader{
+    background-color: #2d2d2d;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.faqCardHeader:hover{
+    background-color: #414141;
+}
+.faqTitle{
+    font-size: 24px;
+}
+.faqDesc{
+    margin-top: 5px;
+    box-sizing: content-box;
+    overflow: hidden;
+    padding: 0px 16px;
+    max-height: 0;
+    transition: max-height 0.5s linear;
+    background-color: #2d2d2d;
+}
+.faqDescActive{
+    max-height: 140px;
+    padding: 16px;
+}
+

@@ -1,0 +1,13 @@
+.faqs_wrapper{
+    padding: 40px 80px;
+    background-color: black;
+    color: white;
+}
+
+.faqs_heading{
+    font-size: 32px;
+}
+
+.faqs_list{
+    margin-top: 20px;
+}
